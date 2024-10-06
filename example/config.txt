@@ -1,0 +1,2 @@
+Prefix plugins/RibbonPlot/example/
+Plugin RibbonPlot inputfile groupKD.rds outputfile ribbon.pdf
