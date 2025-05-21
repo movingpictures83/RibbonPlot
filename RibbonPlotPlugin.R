@@ -16,6 +16,8 @@ output <- function(outputfile) {
 	res <- results(myD)
 res <- res[order(res$pvalue, decreasing = FALSE), ]
 top_gene_id <- res$gene_id[1]
+#print(str(myD))
+write.csv(myD@results_gene$lr, paste(outputfile, "csv", sep="."))
 plotProportions(myD, gene_id = top_gene_id, group_variable = "group", plot_type = "ribbonplot")
 
 }
